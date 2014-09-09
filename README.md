@@ -14,3 +14,4 @@ The zip file contains 332 comma-separated-value (CSV) files containing pollution
 
 For this programming assignment you will need to unzip this file and create the directory 'specdata'. Once you have unzipped the zip file, do not make any modifications to the files in the 'specdata' directory. In each file you'll notice that there are many days where either sulfate or nitrate (or both) are missing (coded as NA). This is common with air pollution monitoring data in the United States.
 
+***The dataset is avaliable as rprog_data_specdata.zip in the repository ***
