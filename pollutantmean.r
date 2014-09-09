@@ -5,6 +5,15 @@
 #missing values coded as NA. 
 
 pollutantmean <- function(dir, pol, id=1:332){
+	## 'dir' is a character vector of length 1 indicating
+        ## the location of the CSV files
+        
+        ## 'pollutant' is a character vector of length 1 indicating
+        ## the name of the pollutant for which we will calculate the
+        ## mean; either "sulfate" or "nitrate".
+        
+        ## 'id' is an integer vector indicating the monitor ID numbers
+        ## to be used
 	total_sum <- 0
 	total_length <- 0
 	for(name in id){
@@ -20,5 +29,8 @@ pollutantmean <- function(dir, pol, id=1:332){
 		total_length <- total_length + length(colData[log])	
 	}
 	print(total_sum/total_length)
+	
+	## Return the mean of the pollutant across all monitors list
+        ## in the 'id' vector (ignoring NA values)
 }
 
